@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[dispatch_async]]></title>
-  <link href="http://mgreiner.github.io/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Xcode | dispatch_async]]></title>
+  <link href="http://mgreiner.github.io/blog/categories/xcode/atom.xml" rel="self"/>
   <link href="http://mgreiner.github.io/"/>
   <updated>2014-02-19T08:13:11-05:00</updated>
   <id>http://mgreiner.github.io/</id>
@@ -52,7 +52,7 @@
 
 <p>If instead you use a break point action like this:</p>
 
-<p><img class="left" src="images/example-breakpoint-action.png" title="A Breakpoint Action in Xcode 5.1" alt="An example of a breakpoint action in Xcode 5.1" /></p>
+<p><img class="left" src="images/example-breakpoint-action.png" title="‘A Breakpoint Action in Xcode 5.1’ ‘An example of a breakpoint action in Xcode 5.1’" ></p>
 
 <p>You can log the same value without inserting a <code>NSLog</code> statement in your code. The <code>@</code> delimeters indicate to the debugger that it should evaluate the delimited text as an LLDB expression. However in prior versions of Xcode this did not work very well with Objective-C objects. The above example would yied something like this in the debugger console:</p>
 
@@ -63,7 +63,7 @@
 
 <p>My workaround for this was usually to add two breakpoint actions, a Log Message action and a Debugger Command action:</p>
 
-<p><img class="left" src="http://url/of/image" title="Two Breakpoint Actions to Log a Value" alt="Using two breakpoint actions to log a variable" /></p>
+<p><img class="left" src="http://url/of/image" title="‘Two Breakpoint Actions to Log a Value’ “Using two breakpoint actions to log a variable’s value”" ></p>
 
 <p>This has the obvious disadvantage that it’s more work and two lines of output are produced instead of one. But in Xcode 5.1, the debugger now shows the summary of the object instead of its address. So now when I create the same breakpoint action in Xcode 5.1, I see this:</p>
 
@@ -76,7 +76,7 @@
 
 <p>You can also set the debugger’s console to display only <em>Debugger Output</em>. to show only the output from your breakpoint actions. This will allow you to easily focus on what you’re tracing and ignore the rest of the logging noise.</p>
 
-<p><img class="left" src="http://url/of/image" title="'The Xcode console windoe set to _Debugger Output_'" /></p>
+<p><img class="left http://url/of/image ‘The Xcode console windoe set to <em>Debugger" src="Output</em>’"></p>
 
 <p>Using several breakpoints in this way with conditions applied and enabling/disabling them when necessary becomes a very powerful and flexible debugging mechanism.</p>
 ]]></content>
